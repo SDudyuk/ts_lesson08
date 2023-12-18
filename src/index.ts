@@ -56,3 +56,14 @@ function checkNumberTypeValues(param: ITask01): boolean {
   });
   return true;
 }
+
+//test readonly
+interface IUser {
+  readonly [key: string]: string;
+}
+
+const user: IUser = { name: "Joe" };
+
+user.name;
+
+//user.name = "Joe";
