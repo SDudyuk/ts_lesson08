@@ -11,7 +11,7 @@ interface ITask01 {
 Ключами можуть бути рядки, а значеннями — функції, які приймають будь-які аргументи.
 */
 interface ITask02 {
-  [key: string]: (arg: any) => any;
+  [key: string]: (...rest: any[]) => any;
 }
 
 /*
